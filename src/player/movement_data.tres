@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="PlayerMovementData" load_steps=2 format=3 uid="uid://djxynwfaxru43"]
+
+[ext_resource type="Script" path="res://src/player/PlayerMovementData.cs" id="1_lorch"]
+
+[resource]
+script = ExtResource("1_lorch")
+Speed = 80.0
+Gravity = 500.0
+JumpSpeed = 30.0
+Acceleration = 8.0
+Friction = 20.0
+AirAcceleration = 5.0
+AirFriction = 10.0
