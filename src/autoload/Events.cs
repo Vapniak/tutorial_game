@@ -4,6 +4,7 @@ using System;
 public partial class Events : Node
 {
     [Signal] public delegate void LevelCompletedEventHandler();
+    [Signal] public delegate void HeartPickedUpEventHandler();
 
     public static Events Instance {get;private set;}
 

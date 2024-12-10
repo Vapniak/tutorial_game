@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://pxik3ntw3c4d"]
+
+[ext_resource type="Script" path="res://src/start_menu/StartMenu.cs" id="1_pl11c"]
+[ext_resource type="PackedScene" uid="uid://cfp1i80wqdbi7" path="res://src/levels/level_one.tscn" id="2_ibq2e"]
+
+[node name="StartMenu" type="CenterContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pl11c")
+startLevel = ExtResource("2_ibq2e")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+alignment = 1
+
+[node name="StartButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Start"
+
+[node name="QuitButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Quit"
+
+[connection signal="pressed" from="VBoxContainer/StartButton" to="." method="OnStartButtonPressed"]
+[connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="OnQuitButtonPressed"]

@@ -86,6 +86,7 @@ height = 18.0
 size = Vector2(12, 18)
 
 [node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("AnimatedSprite")]
+collision_layer = 2
 script = ExtResource("1_2jkop")
 MovementData = ExtResource("2_w27wi")
 AnimatedSprite = NodePath("AnimatedSprite2D")
@@ -104,7 +105,7 @@ shape = SubResource("CapsuleShape2D_aw2tf")
 
 [node name="HazardDetector" type="Area2D" parent="."]
 collision_layer = 0
-collision_mask = 8
+collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HazardDetector"]
 position = Vector2(0, -9)
