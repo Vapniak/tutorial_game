@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cka5cu7tiukqb" path="res://assets/tileset.png" id="1_8rp7g"]
 [ext_resource type="Texture2D" uid="uid://c1e1b5s2nwvdj" path="res://assets/slopes_merged.png" id="2_fbnx1"]
 [ext_resource type="PackedScene" uid="uid://bwhi4ofmt75xa" path="res://src/player/player.tscn" id="2_phhp1"]
-[ext_resource type="PackedScene" uid="uid://dq5u3spf6qyka" path="res://src/spikes.tscn" id="3_4lpjj"]
+[ext_resource type="PackedScene" uid="uid://dq5u3spf6qyka" path="res://src/hazard/spikes.tscn" id="3_4lpjj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6ktwt"]
 resource_name = "autotile"
